@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="778.0" prefWidth="775.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project2.MainController">
+   <left>
+      <Pane fx:id="sidebarPane" stylesheets="@stylesheet.css" BorderPane.alignment="CENTER">
+         <children>
+            <VBox fx:id="sidebar" alignment="TOP_CENTER" prefHeight="780.0" prefWidth="250.0" styleClass="sidebar" stylesheets="@stylesheet.css">
+               <children>
+                  <ImageView fitHeight="230.0" fitWidth="230.0" pickOnBounds="true" smooth="false">
+                     <image>
+                        <Image url="@pictures/rahmani.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <JFXButton contentDisplay="RIGHT" ripplerFill="#f0e3e3" styleClass="sidebar-user-btn" text="Context-Free Grammars">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="6.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@pictures/arrow-desc.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="250.0" style="-fx-text-fill: #b8b1b1;" text="Main Page" textFill="#b8b1b1">
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="enterGrammarBtn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" styleClass="sidebar-btn" stylesheets="@stylesheet.css" text=" ">
+                     <graphic>
+                        <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0">
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                           <children>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@pictures/keyboard.png" />
+                                 </image>
+                              </ImageView>
+                              <Label style="-fx-text-fill: #b8b1b1;" text="Enter Grammar" textFill="#b8b1b1">
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Calibri Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="grammarValidationBtn" prefHeight="40.0" prefWidth="300.0" styleClass="sidebar-btn" text=" ">
+                     <graphic>
+                        <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0">
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                           <children>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@pictures/validation.png" />
+                                 </image>
+                              </ImageView>
+                              <Label style="-fx-text-fill: #b8b1b1;" text="Grammar Validation" textFill="#b8b1b1">
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Calibri Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </graphic>
+                  </JFXButton>
+                  <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="250.0" style="-fx-text-fill: #b8b1b1;" text="Change To Normal Forms" textFill="#b8b1b1">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <JFXButton fx:id="deleteTrashBtn" prefHeight="40.0" prefWidth="300.0" styleClass="sidebar-btn" text=" ">
+                     <graphic>
+                        <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0">
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                           <children>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@pictures/deleteTrash.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="7.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label style="-fx-text-fill: #b8b1b1;" text="NF (Delete Trash)" textFill="#b8b1b1">
+                                 <HBox.margin>
+                                    <Insets left="25.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Calibri Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="cnfBtn" prefHeight="40.0" prefWidth="300.0" styleClass="sidebar-btn" text=" ">
+                     <graphic>
+                        <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0">
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@pictures/cnf.png" />
+                                 </image>
+                              </ImageView>
+                              <Label style="-fx-text-fill: #b8b1b1;" text="CNF (Chomskey)" textFill="#b8b1b1">
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Calibri Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="gnfBtn" prefHeight="40.0" prefWidth="300.0" styleClass="sidebar-btn" text=" ">
+                     <graphic>
+                        <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0">
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@pictures/gnf.png" />
+                                 </image>
+                              </ImageView>
+                              <Label style="-fx-text-fill: #b8b1b1;" text="GNF (Greibach)" textFill="#b8b1b1">
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Calibri Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="generateBtn" prefHeight="40.0" prefWidth="300.0" styleClass="sidebar-btn" text=" ">
+                     <graphic>
+                        <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0">
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                           <children>
+                              <ImageView fitHeight="37.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@pictures/tree.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="-3.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label style="-fx-text-fill: #b8b1b1;" text="Generate by Grammar" textFill="#b8b1b1">
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Calibri Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </graphic>
+                  </JFXButton>
+                  <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="250.0" style="-fx-text-fill: #b8b1b1;" text="Calculator" textFill="#b8b1b1">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <JFXButton fx:id="antlrBtn" prefHeight="40.0" prefWidth="300.0" styleClass="sidebar-btn" text=" ">
+                     <graphic>
+                        <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="254.0">
+                           <padding>
+                              <Insets left="25.0" />
+                           </padding>
+                           <children>
+                              <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@pictures/antlr.png" />
+                                 </image>
+                              </ImageView>
+                              <Label style="-fx-text-fill: #b8b1b1;" text="ANTLR" textFill="#b8b1b1">
+                                 <HBox.margin>
+                                    <Insets left="17.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Consolas Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton prefHeight="40.0" prefWidth="300.0" styleClass="sidebar-btn" text=" ">
+                     <graphic>
+                        <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0">
+                           <padding>
+                              <Insets left="25.0" />
+                           </padding>
+                           <children>
+                              <ImageView fitHeight="27.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@pictures/calculator.png" />
+                                 </image>
+                              </ImageView>
+                              <Label style="-fx-text-fill: #b8b1b1;" text="PDA Calculator" textFill="#b8b1b1">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Consolas Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </left>
+   <center>
+      <Pane fx:id="contentAreaPane" prefHeight="778.0" prefWidth="778.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox fx:id="content_area" prefHeight="778.0" prefWidth="770.0" style="-fx-background-color: #fff;" stylesheets="@stylesheet.css">
+               <children>
+                  <HBox fx:id="menubar" alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" style="-fx-background-color: #fff; -fx-border-color: #cccccc; -fx-border-width: 0px 0px 1px 0px;" stylesheets="@stylesheet.css">
+                     <children>
+                        <JFXButton fx:id="listBtn" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" ripplerFill="WHITE" styleClass="menu-bar-btns" text=" ">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" styleClass="menu-bar-btns-icon">
+                                 <image>
+                                    <Image url="@pictures/th-list.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="300.0" HBox.hgrow="ALWAYS" />
+                        <HBox alignment="TOP_RIGHT" layoutX="10.0" layoutY="10.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <JFXButton fx:id="closeBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="351.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" ripplerFill="WHITE" styleClass="menu-bar-btns" text=" ">
+                                 <graphic>
+                                    <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@pictures/close.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="2.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="774.0">
+                     <children>
+                        <VBox prefHeight="74.0" prefWidth="504.0">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                           <children>
+                              <Label text="Context-Free Grammar Rules" textFill="#757373">
+                                 <font>
+                                    <Font name="Calibri Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <HBox>
+                                 <children>
+                                    <Label text="Theory of Computation" textFill="RED">
+                                       <font>
+                                          <Font name="Calibri Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox>
+                                 <children>
+                                    <Label textFill="#757373">
+                                       <font>
+                                          <Font name="Calibri Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="55.0" prefWidth="346.0" text="Developed By: Alireza Haqani / Danial Bazmandeh" textFill="#00a1ff">
+                                       <font>
+                                          <Font name="Calibri Bold" size="16.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
+                           <children>
+                              <JFXButton fx:id="openBtn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="100.0" styleClass="content-area-circle-btns" text="Open">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="14.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@pictures/circle.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                              <JFXButton fx:id="editBtn" contentDisplay="CENTER" layoutX="10.0" layoutY="17.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" styleClass="content-area-circle-btns" text=" ">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="14.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@pictures/edit.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                              <JFXButton fx:id="deleteBtn" contentDisplay="CENTER" layoutX="110.0" layoutY="17.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" styleClass="content-area-circle-btns" text=" ">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="14.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@pictures/deleteTrash.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+                  <AnchorPane prefHeight="652.0" prefWidth="774.0">
+                     <children>
+                        <JFXTextArea fx:id="txtInput" focusColor="#1e3d9a" layoutX="152.0" layoutY="385.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="118.0" prefWidth="519.0" promptText="Enter the grammar production rules..." scrollLeft="15.0">
+                           <font>
+                              <Font name="Calibri Bold" size="16.0" />
+                           </font>
+                        </JFXTextArea>
+                        <JFXButton fx:id="submitBtn" layoutX="229.0" layoutY="518.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="150.0" styleClass="content-area-circle-btns" text=" Submit">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@pictures/checked.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXTextArea fx:id="txtFixed" editable="false" focusColor="#1e3d9a" layoutX="152.0" layoutY="94.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="224.0" prefWidth="519.0" promptText="                                                                 ***WELCOME***" scrollLeft="15.0">
+                           <font>
+                              <Font name="Calibri Bold" size="16.0" />
+                           </font>
+                        </JFXTextArea>
+                        <Label layoutX="152.0" layoutY="343.0" prefHeight="34.0" prefWidth="492.0" text="Correct Form: &lt;START&gt; -&gt; &lt;VARIABLE&gt;terminal | terminal" textFill="RED">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblNotif" alignment="CENTER" contentDisplay="CENTER" layoutX="166.0" layoutY="570.0" prefHeight="34.0" prefWidth="492.0" textAlignment="CENTER" textFill="RED">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <JFXButton fx:id="calculateBtn" layoutX="444.0" layoutY="518.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="150.0" styleClass="content-area-circle-btns" text="        Calculate">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXTextArea fx:id="txtExpression" focusColor="#1e3d9a" layoutX="14.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="159.0" promptText="Enter expression..." scrollLeft="15.0">
+                           <font>
+                              <Font name="Calibri Bold" size="16.0" />
+                           </font>
+                        </JFXTextArea>
+                        <ImageView fitHeight="27.0" fitWidth="24.0" layoutX="470.0" layoutY="526.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@pictures/calculator_colored.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
