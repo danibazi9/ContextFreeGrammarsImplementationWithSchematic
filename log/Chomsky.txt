@@ -1,0 +1,9 @@
+
+<START> -> <SUBJECT><V2>
+<SUBJECT> -> i|we
+<DISTANCE> ->  
+<VERB> -> eat|drink|go
+<OBJECTS> -> food|water
+<V0> -> <DISTANCE><OBJECTS>
+<V1> -> <VERB><V0>
+<V2> -> <DISTANCE><V1>

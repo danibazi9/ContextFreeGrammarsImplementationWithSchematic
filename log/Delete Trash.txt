@@ -1,0 +1,6 @@
+
+<START> -> i<V2>|we<V2>
+<OBJECTS> -> food|water
+<V0> ->  <OBJECTS>
+<V1> -> eat<V0>|drink<V0>|go<V0>
+<V2> ->  <V1>

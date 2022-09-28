@@ -1,0 +1,73 @@
+﻿#sidebar {
+    -fx-background-color: rgb(58,69,88);
+}
+
+.sidebar {
+    -fx-background-color: rgb(58,69,88);
+}
+
+.sidebar-user-btn {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0px;
+    -fx-text-fill: #b8b1b1;
+}
+
+.sidebar-btn {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0px;
+    -fx-text-fill: #b8b1b1;
+}
+
+.sidebar-btn:hover {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0px;
+    -fx-text-fill: #b8b1b1;
+    -fx-border-color: rgb(22,169,250);
+    -fx-border-width: 0px 2px 0px 3px;
+}
+
+.sidebar-btn-icon {
+    -fx-fill: #b8b1b1;
+}
+
+.menu-bar-btns {
+    -fx-background-color: #fff;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1px;
+}
+
+.menu-bar-btns:hover {
+    -fx-background-color: #0099ff;
+}
+
+.menu-bar-btns-icon {
+    -fx-fill: #cccccc;
+}
+
+.menu-bar-btns:hover .menu-bar-btns-icon {
+    -fx-image: url("Pictures/th-list-hover.png");
+}
+
+.menu-bar-btns .menu-bar-btns-icon {
+    -fx-image: url("Pictures/th-list.png");
+}
+
+.content-area-circle-btns {
+    -fx-background-color: #fff;
+    -fx-background-radius: 100px;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 100%;
+}
+
+.content-area-circle-btns:hover {
+    -fx-background-color: #0099ff;
+    -fx-background-radius: 100px;
+}
+
+.content-area-circle-btns-icon {
+    -fx-image: url("Pictures/circle.png");
+}
+
+.content-area-circle-btns:hover .content-area-circle-btns-icon {
+    --fx-image: url("Pictures/circle-hover.png");
+}
